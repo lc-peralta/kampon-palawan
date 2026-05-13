@@ -55,11 +55,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .hl{list-style:none;display:flex;flex-direction:column;gap:4px}
 .hl li{font-size:12px;color:var(--txs);display:flex;gap:7px;line-height:1.5;align-items:flex-start}
 .sec{font-size:13px;font-weight:600;color:var(--txs);margin:1.25rem 0 .5rem;display:flex;align-items:center;gap:6px}
-.chk{display:flex;align-items:center;gap:10px;font-size:13px;padding:9px 12px;border:1px solid var(--br);border-radius:var(--r);cursor:pointer;background:var(--bg);margin-bottom:5px;user-select:none}
-.chk.done{border-color:var(--tm);background:var(--tl)}.chk.done .chk-lbl{text-decoration:line-through;color:var(--txm)}
-.chkbox{width:20px;height:20px;border-radius:5px;border:1.5px solid var(--br);flex-shrink:0;display:flex;align-items:center;justify-content:center}
-.chk.done .chkbox{background:var(--teal);border-color:var(--teal)}
-.chk-lbl{flex:1;color:var(--txs)}
 .wx-card{background:var(--bgs);border-radius:var(--rl2);padding:1.1rem;margin-bottom:1rem;display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--br)}
 .wx-temp{font-size:36px;font-weight:700;line-height:1}
 .wx-cond{font-size:13px;color:var(--txs);margin-top:2px}
@@ -74,17 +69,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .wx-trip{background:var(--aml);border:1px solid var(--amb);border-radius:var(--r);padding:11px 13px}
 .wx-tt{font-size:13px;font-weight:600;color:var(--am);margin-bottom:5px;display:flex;align-items:center;gap:5px}
 .wx-tx{font-size:12px;color:var(--am);line-height:1.6}
-.grp-row{display:flex;align-items:center;gap:12px;background:var(--bgs);border-radius:var(--rl2);padding:.9rem 1.1rem;margin-bottom:1rem;border:1px solid var(--br)}
-.grp-lbl{font-size:13px;color:var(--txs);flex:1;display:flex;align-items:center;gap:7px}
-.grp-ctrl{display:flex;align-items:center;gap:12px}
-.grp-btn{width:30px;height:30px;border-radius:50%;border:1.5px solid var(--br);background:var(--bg);cursor:pointer;font-size:18px;font-weight:600;color:var(--tx);display:flex;align-items:center;justify-content:center}
-.grp-num{font-size:22px;font-weight:700;min-width:26px;text-align:center}
-.totals{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1.25rem}
-.tot-pp{background:var(--tl);border:1.5px solid var(--tm);border-radius:var(--rl2);padding:.9rem;text-align:center}
-.tot-grp{background:var(--bgs);border:1px solid var(--br);border-radius:var(--rl2);padding:.9rem;text-align:center}
-.tot-lbl{font-size:12px;color:var(--txs);margin-bottom:3px}
-.tot-pp .tot-lbl{color:var(--td)}.tot-val{font-size:21px;font-weight:700}
-.tot-pp .tot-val{color:var(--tdd)}
+
 .bsec{font-size:13px;font-weight:600;color:var(--txs);margin:.9rem 0 .4rem;display:flex;align-items:center;gap:5px}
 .blist{display:flex;flex-direction:column;gap:3px;margin-bottom:.5rem}
 .brow{display:flex;justify-content:space-between;align-items:center;font-size:12px;padding:6px 9px;border-radius:var(--r)}
@@ -107,10 +92,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   </p>
   <p class="hero-sub">Puerto Princesa · May 29 – June 2, 2026</p>
   <div class="stats">
-    <div class="stat"><p class="stat-label">Budget per person</p><p class="stat-value">₱10–11k</p></div>
-    <div class="stat"><p class="stat-label">Airfare</p><p class="stat-value">₱3,659 <span class="bk bk-w">paid</span></p></div>
-    <div class="stat"><p class="stat-label">Airbnb (4 nights)</p><p class="stat-value">₱1,410 <span class="bk bk-w">paid</span></p></div>
-    <div class="stat"><p class="stat-label">Main highlights</p><p class="stat-value">3 major tours</p></div>
+    <div class="stat"><p class="stat-label">Trip duration</p><p class="stat-value">5 days · 4 nights</p></div>
+    <div class="stat"><p class="stat-label">Budget / pax</p><p class="stat-value">₱10–11k all-in</p></div>
+    <div class="stat"><p class="stat-label">Islands to visit</p><p class="stat-value">6+ islands</p></div>
+    <div class="stat"><p class="stat-label">Sea temp</p><p class="stat-value">30°C 🌊</p></div>
   </div>
 </div>
 
@@ -154,11 +139,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <button class="day-btn" data-d="4">Day 5<br>Departure</button>
   </div>
   <div id="daycontent"></div>
-  <p class="sec" style="margin-top:1.5rem">
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.615 20H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8M14 19l2 2 4-4M5 8h14M5 12h8M5 16h5"/></svg>
-    Pre-trip checklist
-  </p>
-  <div id="checklist"></div>
+
 </div>
 
 <!-- WEATHER -->
@@ -211,16 +192,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 
 <!-- BUDGET -->
 <div class="panel" id="t2">
-  <div class="grp-row">
-    <span class="grp-lbl">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2M16 3.13a4 4 0 0 1 0 7.75M21 21v-2a4 4 0 0 0-3-3.85"/></svg>
-      People in your group
-    </span>
-    <div class="grp-ctrl"><button class="grp-btn" id="gminus">−</button><span class="grp-num" id="gval">4</span><button class="grp-btn" id="gplus">+</button></div>
-  </div>
-  <div class="totals">
-    <div class="tot-pp"><p class="tot-lbl">Per person</p><p class="tot-val" id="totpp">₱0</p></div>
-    <div class="tot-grp"><p class="tot-lbl">Group total</p><p class="tot-val" id="totgrp">₱0</p></div>
+
+  <div style="background:var(--tl);border:1.5px solid var(--tm);border-radius:var(--rl2);padding:1rem;text-align:center;margin-bottom:1.25rem">
+    <p style="font-size:12px;color:var(--td);margin-bottom:4px">Estimated cost per person</p>
+    <p style="font-size:28px;font-weight:700;color:var(--tdd)" id="totpp">₱0</p>
+    <p style="font-size:11px;color:var(--td);margin-top:4px">all-in estimate · actual may vary</p>
   </div>
   <p class="bsec">
     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--gray)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><circle cx="12" cy="16" r="1"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
@@ -273,21 +249,189 @@ function chksvg() {
 }
 
 var ACTS = [
-  {day:0,bg:'#37474F',ic:'plane',label:'Puerto Princesa Airport (PPS)',time:'4 AM – 7 AM',name:'Bus to NAIA 3 → Flight → Arrival @ PPS',hl:['4 AM bus from Manila · 6 AM arrival in PPS · airport pick-up at 7 AM','30–45 min drive to Airbnb after pick-up']},
-  {day:0,bg:'#B71C1C',ic:'fork',label:"Ka Joel's / Ka Lui / Ka Inato",time:'12 PM',name:'Lunch at famous garden restaurants',badges:[{c:'bk-bl',t:'Black & White'}],price:[{l:'est.',v:'₱300–500/pax'}],tip:"Ka Lui: shoes off at the door. Ka Joel's: famous for huge seafood platters. Make a reservation — they fill up fast!",hl:['Try: crispy pata, kare-kare, fresh seafood','Ask for the garden seating for the best photos']},
-  {day:0,bg:'#1B5E20',ic:'tree',label:'Mitra Ranch + Rainbow Giant Slide',time:'2 PM',name:'Mitra Ranch + Rainbow Giant Slide',price:[{l:'entrance',v:'₱60'},{l:'slide',v:'₱150–200/ride'},{l:'total',v:'~₱250/pax'}],hl:['Panoramic views over Honda Bay and the city','Multi-lane rainbow slide — bring extra cash!','Farm animals on site, great for photos']},
-  {day:0,bg:'#1A237E',ic:'moon',label:"Catalina's + Dinner @ Airbnb",time:'5–7 PM',name:"Merienda @ Catalina's · Dinner @ Airbnb",hl:["Catalina's (5 PM) — popular local halo-halo and kakanin"],warns:['Early rest! Tour pick-up is 7 AM tomorrow']},
-  {day:1,bg:'#006064',ic:'star',label:'Starfish Island · Honda Bay',time:'9 AM',name:'Starfish Island',badges:[{c:'bk-tl',t:'Stop 1'}],price:[{l:'shared joiner',v:'₱1,600–1,950/pax all-in'}],tip:"Don't touch or lift the starfish — it can kill them. Gin-clear shallow water, perfect even for non-swimmers.",hl:['Abundant sea stars in shallow crystal-clear water','Snorkel mask rental: ₱100–200 if not in tour']},
-  {day:1,bg:'#01579B',ic:'wave',label:'Luli Island — Disappearing Sandbar',time:'10:30 AM',name:'Luli Island',badges:[{c:'bk-tl',t:'Stop 2'}],tip:'"Luli" = lulubog lilutang (sinks and floats). Circular sandbar almost disappears at high tide — best Instagram spot!',hl:['Calm shallow waters — great for wading and photos','Floating huts available, coconuts sold nearby']},
-  {day:1,bg:'#004D40',ic:'fork',label:'Cowrie Island — Lunch & Watersports',time:'12 PM',name:'Cowrie Island',badges:[{c:'bk-tl',t:'Stop 3'},{c:'bk-am',t:'lunch incl.'}],price:[{l:'jet ski',v:'~₱1,000/15 min'},{l:'massage',v:'~₱400/hr'}],hl:['Buffet lunch: grilled fish, rice, tropical fruits','Bar, volleyball, watersports, massage huts'],warns:['Bring extra cash — watersports NOT included in tour price']},
-  {day:2,bg:'#0D1428',ic:'drop',label:'Puerto Princesa Underground River',time:'9 AM',name:'Underground River',badges:[{c:'bk-bl',t:'UNESCO'},{c:'bk-bl',t:'New 7 Wonders'}],price:[{l:'tour package',v:'₱2,000–2,700/pax'},{l:'incl. permits + guide + lunch',v:''}],tip:'Book permits in advance — daily slots are strictly limited! Confirm your tour operator has this secured.',hl:['8.2 km navigable river — one of the world\'s longest','Paddleboat covers ~1 km inside with audio guide','Highlight: the Cathedral chamber with giant stalactites'],warns:["Don't leave bags unattended — monkeys steal!"]},
-  {day:2,bg:'#2E7D32',ic:'down',label:'Sabang Beach + Zipline',time:'2 PM',name:'Sabang Beach + Sabang X Zipline',badges:[{c:'bk-am',t:'optional'}],price:[{l:'zipline',v:'₱550/pax'},{l:'beach',v:'FREE'}],hl:['Walk through jungle to the tower, zip back to beach in ~1.5 min','Buy pasalubong · Cacaoyan Forest Park nearby']},
-  {day:2,bg:'#B71C1C',ic:'fork',label:'Ka Inato + Baywalk',time:'7 PM',name:'Dinner @ Ka Inato',badges:[{c:'bk-bl',t:'Wear Blue'}],price:[{l:'est.',v:'₱300–500/pax'}],hl:['Famous for tamilok, crispy danggit, fresh seafood platters','After dinner: stroll the Baywalk for night views']},
-  {day:3,bg:'#37474F',ic:'car',label:'Drive to Port Barton (~97 km)',time:'6 AM',name:'Drive to Port Barton',price:[{l:'shared van',v:'~₱400/pax'},{l:'travel time',v:'~2 hrs'}],tip:'Pack snacks + motion sickness meds (winding sections). Withdraw cash in PPS — only 2 ATMs in Port Barton!'},
-  {day:3,bg:'#0277BD',ic:'anchor',label:'Port Barton Island Hopping',time:'10 AM',name:'Port Barton Island Hopping',badges:[{c:'bk-tl',t:'all-inclusive'}],price:[{l:'shared tour',v:'₱1,500–1,700/pax'},{l:'incl. lunch, snorkel, fees',v:''}],hl:['White Beach + Coconut Beach — powdery sand, calm lagoons','Twin Reef — frequent sea turtle sightings','Lunch cooked fresh on the beach by your boatman','Far fewer crowds than El Nido — better photos, more relaxed']},
-  {day:3,bg:'#37474F',ic:'car',label:'Return to Puerto Princesa',time:'4 PM',name:'Drive back + Dinner @ Airbnb',hl:['~2 hr drive back · last dinner using remaining groceries'],warns:['Pack tonight! Check-out 10 AM, flight 12 PM tomorrow']},
-  {day:4,bg:'#E65100',ic:'sun',label:'Last Morning',time:'Morning',name:'Last breakfast + pack up',tip:'Pack the night before! Pasalubong in checked baggage. PPS airport has last-minute shops.'},
-  {day:4,bg:'#37474F',ic:'plane',label:'Puerto Princesa Airport → Manila',time:'10 AM – 12 PM',name:'Check-out → Airport Transfer → Flight to MNL',price:[{l:'check-out',v:'10 AM'},{l:'transfer',v:'₱175/pax'},{l:'flight',v:'12 PM → MNL'}],hl:['Airport is 15–20 min from city — leave by 10:30 AM','Check in online the day before to skip the queue']},
+  {day:0,bg:'#37474F',ic:'plane',label:'Baguio → NAIA T3 → Puerto Princesa',time:'7 PM (night before)',
+   name:'Bus from Baguio → NAIA Terminal 3 → Flight to PPS',
+   tip:'Overnight bus from Baguio to NAIA T3 takes ~6–7 hrs. Book Victory Liner or Genesis in advance — they drop off right at NAIA T3. Sleep on the bus, catch the morning flight.',
+   hl:['7 PM: Board bus at Baguio terminal bound for NAIA Terminal 3',
+       'Bus ride: ~6–7 hrs · arrive Manila around 1–3 AM',
+       'Bring travel pillow + jacket — bus aircon is freezing',
+       'Check in online before boarding to skip airport queues',
+       'Grab food at NAIA T3 while waiting for your gate to open',
+       'Flight from NAIA T3 → Puerto Princesa Airport (PPS)',
+       '6 AM arrival at PPS · pick-up then straight to Airbnb']},
+  {day:0,bg:'#B71C1C',ic:'fork',label:"Ka Joel\'s / Ka Lui / Ka Inato",time:'12 PM',
+   name:"Lunch @ Ka Joel\'s / Ka Lui / Ka Inato",
+   badges:[{c:'bk-bl',t:'Black & White'}],
+   price:[{l:'budget',v:'₱300–500/pax'}],
+   tip:"Ka Lui is the most iconic — traditional Filipino treehouse, shoes off at the door. RESERVATION REQUIRED, call at least a day ahead. Ka Joel\'s is great for walk-ins with massive group portions.",
+   hl:['MUST TRY: crispy pata, kare-kare sa gata, fresh tamilok (woodworm!)',
+       'Ka Lui: remove shoes at the door · open-air treehouse · call ahead to reserve',
+       "Ka Joel\'s: massive bilao servings perfect for big groups · walk-in friendly",
+       'Ka Inato: good for large groups, less strict on reservations',
+       'Dress code BLACK & WHITE — staff will gather you for coordinated group photos!',
+       'Order fresh buko juice and Palawan honey desserts',
+       'Ask for the garden seating area for the best ambiance and photos',
+       'Lunch is the best time — some close early for dinner']},
+  {day:0,bg:'#1B5E20',ic:'tree',label:'Mitra Ranch + Rainbow Giant Slide',time:'2 PM',
+   name:'Mitra Ranch + Rainbow Giant Slide',
+   price:[{l:'entrance',v:'₱60'},{l:'slide',v:'₱150–200/ride'},{l:'total',v:'~₱250/pax'}],
+   tip:"Wear shorts or leggings for the slide — jeans are uncomfortable and slow you down. Bring ₱200–300 extra cash for multiple rides. A mat is provided for the slide.",
+   hl:['Former ranch of ex-senator Roberto Mitra, now a popular tourist farm',
+       '7-lane multi-colored rainbow giant slide — thrilling and fast!',
+       'Multiple riders can go at once — great for group action shots',
+       'View deck with panoramic views over Puerto Princesa Bay and Honda Bay',
+       'Farm animals on site: horses, goats, rabbits, peacocks — great for photos',
+       'Freshly picked fruits and local snacks available at the farm stalls',
+       'Best in afternoon when the light turns golden for photos',
+       'Combine with a quick stop at the city view for a skyline shot']},
+  {day:0,bg:'#1A237E',ic:'moon',label:"Catalina\'s + Dinner @ Airbnb",time:'5–7 PM',
+   name:"Merienda @ Catalina\'s · Dinner @ Airbnb",
+   hl:["Catalina\'s (5 PM): famous for halo-halo, fresh lumpia, kalamay-hati",
+       'Try the Palawan honey ice cream if available',
+       'Light dinner at Airbnb to save budget — use grocery supplies',
+       'TONIGHT: prep gear for island hopping tomorrow',
+       'Pack: waterproof bag, sunscreen, snorkeling mask/fins, change of clothes',
+       'Charge all cameras, GoPros, and power banks overnight',
+       'Early rest — island hopping pick-up is 7 AM tomorrow!'],
+   warns:['Tour pick-up is 7 AM sharp — set multiple alarms!']},
+  {day:1,bg:'#006064',ic:'star',label:'Starfish Island · Honda Bay',time:'9 AM',
+   name:'Starfish Island',
+   badges:[{c:'bk-tl',t:'Stop 1'}],
+   price:[{l:'shared joiner all-in',v:'₱1,600–1,950/pax'}],
+   tip:"The sea stars here are HUGE — bright orange-red, scattered across the sandy floor. Walk slowly, they blend in. Never lift them out of the water even for photos — it stresses and can kill them within hours.",
+   hl:['Shallow crystal-clear water, 1–3 feet deep — perfect for non-swimmers',
+       'Large, colorful chocolate chip starfish visible from above the surface',
+       'Gentle current, calm protected waters — ideal for snorkeling beginners',
+       'White sandbar for walking, wading, and group photos',
+       'Snorkeling reveals: parrotfish, clownfish, sea urchins, brain coral',
+       'Small floating stores selling coconuts and light snacks',
+       'Arrive early before other tour boats for less crowded photos',
+       'Water shoes recommended — the sandy bottom has some sharp shells']},
+  {day:1,bg:'#01579B',ic:'wave',label:'Luli Island — Disappearing Sandbar',time:'10:30 AM',
+   name:'Luli Island — The Disappearing Sandbar',
+   badges:[{c:'bk-tl',t:'Stop 2'}],
+   tip:'"Luli" = lulubog lilutang (sinks and floats in Tagalog). At low tide it forms a perfect circular sandbar. Your tour is timed perfectly to catch it at low tide — one of the most photogenic spots in Palawan!',
+   hl:['Famous sandbar that partially disappears underwater at high tide',
+       'At low tide: forms a magical circular sandbar surrounded by turquoise water',
+       'BEST PHOTO SPOT: wade to the outer edge of the sandbar, face the water',
+       'Try the "floating in the middle of the ocean" shot — the perspective is stunning',
+       'Floating huts available for shade and resting — very relaxed vibe',
+       'Fresh coconuts sold on site: ₱60–80 per buko',
+       'Very calm shallow water — safe for children and non-swimmers',
+       'Snorkel around the edges for reef fish, nudibranch, and soft corals']},
+  {day:1,bg:'#004D40',ic:'fork',label:'Cowrie Island — Lunch & Leisure',time:'12 PM',
+   name:'Cowrie Island',
+   badges:[{c:'bk-tl',t:'Stop 3'},{c:'bk-am',t:'lunch incl.'}],
+   price:[{l:'jet ski',v:'~₱1,000/15 min'},{l:'kayak',v:'₱200/hr'},{l:'banana boat',v:'₱300/ride'},{l:'massage',v:'~₱400/hr'}],
+   tip:"This is the most resort-like island in Honda Bay. Buffet lunch is included in your tour package — grilled fish, pancit, rice, fresh fruits. All watersports are optional extras, not included in the tour price.",
+   hl:['Buffet lunch served here: grilled fish, pancit, rice, tropical fruits',
+       'Largest island in Honda Bay — beach volleyball, shaded picnic tables, showers',
+       'Beachfront massage huts for a post-lunch relaxation session',
+       'Watersports available: jet ski, kayak, banana boat, snorkeling gear',
+       'White powdery sand beach — excellent swimming and floating spot',
+       'Cowrie shells naturally scattered along the shoreline',
+       'Small beach bar with cold drinks and refreshments',
+       'Tour usually departs back around 3 PM — last chance for photos here'],
+   warns:['Bring extra cash for watersports — NOT included in the tour package']},
+  {day:2,bg:'#0D1428',ic:'drop',label:'Puerto Princesa Underground River',time:'9 AM',
+   name:'Puerto Princesa Underground River',
+   badges:[{c:'bk-bl',t:'UNESCO 1999'},{c:'bk-bl',t:'New 7 Wonders'}],
+   price:[{l:'full tour package',v:'₱2,000–2,700/pax'},{l:'incl. permits + guide + lunch',v:''}],
+   tip:'BOOK PERMITS WEEKS IN ADVANCE. Daily visitor slots are strictly capped — peak season fills up fast. Your tour operator should arrange this. Confirm the permit is secured before you travel.',
+   hl:['8.2 km navigable underground river — longest open to tourists in the world',
+       'UNESCO World Heritage Site (1999) and New 7 Wonders of Nature (2012)',
+       'Paddleboat tour covers ~1 km inside cave with an audio guide narrating formations',
+       'THE CATHEDRAL: a massive domed chamber with towering stalactites — most dramatic moment',
+       'Spot formations: the Holy Family, the face of Jesus, the Italian Candle rock',
+       'Wildlife at entrance: Palawan monitor lizards (2–3 meters!), macaque monkeys',
+       'Inside the cave: thousands of bats, cave swiftlets, and unique cave fish',
+       'Helmets and life jackets required and provided — it\'s dramatically dark inside',
+       'After tour: Sabang buffet lunch, then optional zipline or mangrove tour'],
+   warns:["Never leave bags unattended near the entrance — monkeys WILL steal food and bags!"]},
+  {day:2,bg:'#2E7D32',ic:'down',label:'Sabang Beach + Sabang X Zipline',time:'2 PM',
+   name:'Sabang Beach + Sabang X Zipline',
+   badges:[{c:'bk-am',t:'optional'}],
+   price:[{l:'zipline',v:'₱550/pax'},{l:'beach entry',v:'FREE'},{l:'mangrove paddle',v:'~₱300/pax'}],
+   tip:"Zipline office is right at the Sabang Boat Terminal exit. Walk through the jungle (~10 min) to reach the platform. The 1.5-minute zip is fast and exhilarating — printed action photos available to buy at the bottom.",
+   hl:['Sabang Beach: long stretch of sand facing the West Philippine Sea — completely free',
+       'Calm waters perfect for a swim after the stuffy cave tour',
+       'Sabang X Zipline: 800-meter zip from jungle treetops back down to the beach',
+       'Jaw-dropping views of the bay and limestone cliffs during the zip',
+       'Printed zipline photos available for purchase at the landing area',
+       'Optional: Mangrove Paddle Boat Tour (₱300) — 1 hr peaceful paddle through mangroves',
+       'Cacaoyan Forest Park: 10-min walk, forest canopy trail with hanging bridges',
+       'Pasalubong stalls nearby: Palawan honey (₱200–400), cashews, dried mangoes',
+       'Small restaurants along the beachfront for afternoon merienda']},
+  {day:2,bg:'#B71C1C',ic:'fork',label:'Ka Inato Restaurant + Baywalk',time:'7 PM',
+   name:'Dinner @ Ka Inato + Baywalk Stroll',
+   badges:[{c:'bk-bl',t:'Wear Blue'}],
+   price:[{l:'est. per person',v:'₱300–500'}],
+   tip:'Ka Inato is one of the most iconic restaurants in Puerto Princesa. Famous for brave orders like tamilok. Reservation recommended — call at least a day ahead.',
+   hl:['MUST TRY: kinilaw na tamilok (woodworm from mangrove trees) — tastes like fresh oysters!',
+       'Also try: crispy crocodile sisig, Palawan blue crab, kare-kare, grilled tanigue (wahoo)',
+       'Tamilok pro tip: dip in coconut vinegar and chili — chug it without thinking too hard',
+       'Dress code BLUE — coordinated photos with the staff and your group!',
+       'Open-air garden seating, relaxed atmosphere, very Filipino dining experience',
+       'After dinner: 5-min walk to Puerto Princesa Baywalk',
+       'Baywalk: 1.5 km scenic promenade along Palawan Bay, lit up at night',
+       'Baywalk food stalls: isaw, BBQ, sizzling sisig, fresh buko — perfect night snack',
+       'Watch the fishermen\'s boats returning across the bay at sunset']},
+  {day:3,bg:'#37474F',ic:'car',label:'Drive to Port Barton (~97 km)',time:'6 AM',
+   name:'Drive to Port Barton · ~2 hours',
+   price:[{l:'shared van',v:'~₱400/pax'},{l:'private van',v:'~₱2,500–3,000 total'}],
+   tip:'Road is mostly paved national highway but has winding mountain stretches that cause motion sickness. Take meds 30 min before departure. The scenery through the Palawan countryside is absolutely beautiful.',
+   hl:['Leave by 6 AM to catch the morning island hopping tour in Port Barton',
+       'Road: paved highway through mountains, rice fields, rivers, and jungle',
+       'Pit stop midway (~San Vicente area) for restrooms and snacks',
+       'Scenery highlights: limestone cliffs, Palawan rivers, traditional villages',
+       'CRITICAL: Withdraw cash in Puerto Princesa — only 2 ATMs in Port Barton, often empty!',
+       'Bring: packed breakfast/snacks, water, motion sickness medicine, headphones',
+       'Van is air-conditioned — bring a light jacket for the 2-hour ride',
+       'Port Barton is a small fishing village with no malls or supermarkets — pack what you need']},
+  {day:3,bg:'#0277BD',ic:'anchor',label:'Port Barton Island Hopping',time:'10 AM',
+   name:'Port Barton Island Hopping Tour',
+   badges:[{c:'bk-tl',t:'all-inclusive'}],
+   price:[{l:'shared tour',v:'₱1,500–1,700/pax'},{l:'incl. lunch + snorkel + fees',v:''}],
+   tip:"Port Barton is Palawan\'s best-kept secret. Same turquoise water and white sand as El Nido — with a tiny fraction of the tourists. Sea turtle sightings here are EXTREMELY common. Bring an underwater camera!",
+   hl:['White Beach: 300m of powdery white sand with a calm, protected crystal lagoon',
+       'Coconut Beach: secluded cove accessible only by boat — excellent snorkeling',
+       'Turtle Point: dedicated snorkeling spot where sea turtles feed daily',
+       'Twin Reef: twin coral reef systems with incredible biodiversity',
+       'Starfish Beach: giant chocolate chip starfish in impossibly clear water',
+       'Water visibility: 10–15 meters — among the best in the whole Philippines',
+       'Lunch cooked fresh by your boatman on a beach: grilled fish, rice, fresh fruit',
+       'Far fewer boats and tourists than Honda Bay — feels like a private island paradise',
+       'Sea turtles here are used to snorkelers — you can swim alongside them!',
+       'Bring: reef-safe sunscreen only (regular sunscreen damages coral)']},
+  {day:3,bg:'#37474F',ic:'car',label:'Return to Puerto Princesa',time:'4 PM',
+   name:'Return Drive + Dinner @ Airbnb',
+   hl:['Depart Port Barton by 4 PM — arrive PPS around 6 PM',
+       'Last dinner at Airbnb — use up remaining groceries',
+       'Pack all bags tonight — check-out is 10 AM tomorrow morning',
+       'Repack pasalubong into checked baggage: honey, vinegar, cashews in checked only',
+       'Check in online tonight for tomorrow\'s flight — skip the airport queue',
+       'Charge all devices, cameras, and power banks overnight'],
+   warns:['Pack TONIGHT — check-out is 10 AM, flight departs 12 PM tomorrow!']},
+  {day:4,bg:'#E65100',ic:'sun',label:'Last Morning in Palawan',time:'Morning',
+   name:'Last Breakfast + Final Moments',
+   tip:"PPS Airport has good pasalubong shops inside departures. Binubukal cashew products, Palawan honey, and tablea are the best buys. Prices similar to city shops — no need to scramble the night before.",
+   hl:['Last breakfast at the Airbnb — finish up the remaining food',
+       'Final walk around the neighborhood for last Palawan moments and photos',
+       'Airport pasalubong shops open from 9 AM: good selection inside departures',
+       'Best airport buys: Palawan cashews, local honey, tablea chocolate, dried mangoes',
+       'Try a Palawan buko pie or local pastry for the flight back to Manila',
+       'Reflect: what was your favorite part of the trip? 🌴']},
+  {day:4,bg:'#37474F',ic:'plane',label:'Puerto Princesa Airport → Manila',time:'10 AM – 12 PM',
+   name:'Check-out → Airport Transfer → Flight to MNL',
+   price:[{l:'check-out',v:'10 AM'},{l:'transfer',v:'₱175/pax'},{l:'flight',v:'12 PM → MNL'}],
+   hl:['Check out of Airbnb by 10 AM sharp — have everything packed the night before',
+       'Airport transfer is 15–20 minutes, ₱175/pax — leave Airbnb by 10:15 AM',
+       'Arrive at PPS Airport by 10:30–10:45 AM for a 12 PM flight',
+       'PPS is a small airport — security and boarding are quick, usually 20–30 min',
+       'Baggage reminder: liquids (honey, vinegar, buko juice) in CHECKED bag only',
+       'Hand carry only: items under 100ml, no sharp objects from souvenir knives',
+       'Board gate opens ~11:15 AM — stay near the gate after clearing security',
+       'Hanggang sa muli, Palawan — until next time! 🌴']}
 ];
 
 var META = [
@@ -352,32 +496,10 @@ function tick() {
 }
 tick(); setInterval(tick, 1000);
 
-// Checklist
-var CHECKS = [
-  {id:'fl', l:'Flights booked (paid!)'}, {id:'ab', l:'Airbnb booked (paid!)'},
-  {id:'pm', l:'Underground River permits secured'}, {id:'to', l:'Tours booked (Honda Bay, Port Barton)'},
-  {id:'ef', l:'Environmental fee ready (₱150)'}, {id:'ca', l:'Cash withdrawn (limited ATMs in Port Barton)'},
-  {id:'bw', l:'Black/White outfit ready (Day 1 lunch)'}, {id:'bl', l:'Blue outfit ready (Day 3 dinner)'},
-  {id:'ss', l:'Reef-safe sunscreen packed'}, {id:'db', l:'Waterproof bag / dry bag packed'},
-];
-var saved = {}; try { var r = localStorage.getItem('palawan26'); if (r) saved = JSON.parse(r); } catch(e) {}
-var cl = document.getElementById('checklist');
-CHECKS.forEach(function(c) {
-  var done = !!saved[c.id];
-  var div = document.createElement('div'); div.className = 'chk' + (done ? ' done' : '');
-  div.innerHTML = '<div class="chkbox">' + (done ? chksvg() : '') + '</div><span class="chk-lbl">' + c.l + '</span>';
-  div.addEventListener('click', function() {
-    done = !done; saved[c.id] = done; try { localStorage.setItem('palawan26', JSON.stringify(saved)); } catch(e) {}
-    div.className = 'chk' + (done ? ' done' : '');
-    div.querySelector('.chkbox').innerHTML = done ? chksvg() : '';
-  });
-  cl.appendChild(div);
-});
 
 // Budget
 var GRP = 4;
 var fixed = [
-  {name:'Round-trip airfare', amt:3659, note:'already paid'},
   {name:'Environmental fee', amt:150, note:'one-time for trip'},
   {name:'Underground River tour', amt:2000, note:'permits + guide + lunch'},
   {name:'Island hopping (Honda Bay)', amt:1600, note:'boat + lunch + fees'},
@@ -386,17 +508,18 @@ var fixed = [
   {name:'Snorkeling gear', amt:300, note:'if not in tour'},
   {name:'Groceries (airbnb)', amt:500, note:''},
   {name:'Food outside', amt:1500, note:'restaurants'},
-  {name:'Trike + local transport', amt:500, note:''},
   {name:'Airport transfer', amt:175, note:''},
 ];
-var shared = [{name:'Airbnb 4 nights', total:5640, note:'total'}, {name:'Car rental (day tour)', total:1440, note:'total'}];
+var shared = [{name:'Car rental (day tour)', total:1440, note:'total (split across group)'}];
 var opts = [
   {id:'oz', name:'Sabang X Zipline', amt:550, on:false},
-  {id:'oj', name:'Jet Ski (1 ride)', amt:1000, on:false},
-  {id:'ow', name:'Whale Shark Watching', amt:3500, on:false},
-  {id:'om', name:'Mangrove Paddle', amt:300, on:false},
-  {id:'ob', name:'Beach Massage', amt:400, on:false},
-  {id:'ou', name:'Ugong Rock', amt:500, on:false},
+  {id:'oj', name:'Jet Ski at Cowrie Island', amt:1000, on:false},
+  {id:'ow', name:'Whale Shark + Dolphin Watching', amt:3500, on:false},
+  {id:'ou', name:'Ugong Rock Adventure', amt:500, on:false},
+  {id:'od', name:'Dolphin Watching (Honda Bay)', amt:800, on:false},
+  {id:'ok', name:'Kinabuchs Bar Night (Baywalk)', amt:500, on:false},
+  {id:'op', name:'Port Barton Beach Bar Night', amt:400, on:false},
+  {id:'oc', name:'Palawan Wildlife Rescue Centre', amt:200, on:false},
 ];
 function fmt(n) { return '₱' + Math.round(n).toLocaleString(); }
 function calc() {
@@ -405,7 +528,6 @@ function calc() {
   var o = opts.filter(function(x) { return x.on; }).reduce(function(a, c) { return a + c.amt; }, 0);
   var pp = f + s + o;
   document.getElementById('totpp').textContent = fmt(pp);
-  document.getElementById('totgrp').textContent = fmt(pp * GRP);
   var fl = document.getElementById('fixedlist'); fl.innerHTML = '';
   fixed.forEach(function(c) { var row = document.createElement('div'); row.className = 'brow'; row.innerHTML = '<span class="bn">' + c.name + (c.note ? ' <span class="bnote">· ' + c.note + '</span>' : '') + '</span><span class="ba">' + fmt(c.amt) + '</span>'; fl.appendChild(row); });
   var sl = document.getElementById('sharedlist'); sl.innerHTML = '';
@@ -418,8 +540,7 @@ function calc() {
     ol.appendChild(div);
   });
 }
-document.getElementById('gplus').addEventListener('click', function() { if (GRP < 12) { GRP++; document.getElementById('gval').textContent = GRP; calc(); } });
-document.getElementById('gminus').addEventListener('click', function() { if (GRP > 2) { GRP--; document.getElementById('gval').textContent = GRP; calc(); } });
+
 calc();
 
 })();
